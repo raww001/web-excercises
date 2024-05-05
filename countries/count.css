@@ -8,3 +8,45 @@ section{
     margin: 25px auto;
     border: 10px solid blue;
 }
+
+section:first-child {
+    background: linear-gradient(to bottom, green 33.33%, white 33.33%, white 66.67%, green 66.67%);
+}
+
+section:nth-child(2) {
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+section:nth-child(2)::before {
+    content: "";
+    display: block;
+    padding-top: 30%;
+    width: 30%;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section:nth-child(3) {
+    background: linear-gradient(to bottom, red 33.33%, blue 33.33%, blue 66.67%, green 66.67%);
+}
+
+section:nth-child(4) {
+    background: linear-gradient(to bottom, green 33.33%, yellow 33.33%, yellow 66.67%, blue 66.67%);
+}
+
+section:nth-child(5) {
+    background: linear-gradient(to right, blue 33.33%, white 33.33%, white 66.67%, red 66.67%);
+}
+
+section:nth-child(6) {
+    background: linear-gradient(to right, black 33.33%, yellow 33.33%, yellow 66.67%, red 66.67%);
+}
+
+section:nth-child(7) {
+    background: linear-gradient(to bottom, black 33.33%, red 33.33%, red 66.67%, yellow 66.67%);
+}
